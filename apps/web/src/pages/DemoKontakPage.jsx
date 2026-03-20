@@ -146,40 +146,40 @@ function DemoKontakPage() {
                   </CardHeader>
                   <CardContent className="space-y-6 px-8 pb-8">
                     <div className="space-y-4">
-                      <div className="flex items-center space-x-4 p-4 rounded-xl bg-card border">
-                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10">
+                      <div className="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 p-4 rounded-xl bg-card border">
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 mx-auto sm:mx-0">
                           <Lock className="h-6 w-6 text-primary" />
                         </div>
-                        <div className="flex-1">
+                        <div className="flex-1 text-center sm:text-left">
                           <p className="text-sm font-medium text-muted-foreground">URL</p>
                           <a 
                             href="https://erp.batasku.cloud" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="text-lg font-semibold text-primary hover:underline"
+                            className="text-lg font-semibold text-primary hover:underline break-all"
                           >
                             https://erp.batasku.cloud
                           </a>
                         </div>
                       </div>
 
-                      <div className="flex items-center space-x-4 p-4 rounded-xl bg-card border">
-                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10">
+                      <div className="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 p-4 rounded-xl bg-card border">
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 mx-auto sm:mx-0">
                           <User className="h-6 w-6 text-primary" />
                         </div>
-                        <div className="flex-1">
+                        <div className="flex-1 text-center sm:text-left">
                           <p className="text-sm font-medium text-muted-foreground">Username</p>
                           <p className="text-lg font-semibold">Administrator</p>
                         </div>
                       </div>
 
-                      <div className="flex items-center space-x-4 p-4 rounded-xl bg-card border">
-                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10">
+                      <div className="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 p-4 rounded-xl bg-card border">
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 mx-auto sm:mx-0">
                           <Lock className="h-6 w-6 text-primary" />
                         </div>
-                        <div className="flex-1">
+                        <div className="flex-1 text-center sm:text-left">
                           <p className="text-sm font-medium text-muted-foreground">Password</p>
-                          <p className="text-lg font-semibold font-mono">Admin@12345</p>
+                          <p className="text-lg font-semibold font-mono break-all">Admin@12345</p>
                         </div>
                       </div>
                     </div>
