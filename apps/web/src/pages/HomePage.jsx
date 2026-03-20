@@ -58,8 +58,50 @@ function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Sistem ERP Terintegrasi - Solusi Manajemen Bisnis Modern</title>
-        <meta name="description" content="Sistem ERP berbasis cloud untuk manajemen keuangan, pembelian, penjualan, dan inventori. Tingkatkan efisiensi bisnis Anda dengan solusi terintegrasi." />
+        <title>Batasku Cloud - ERP Indonesia | Sistem ERP Terintegrasi</title>
+        <meta name="description" content="Sistem ERP berbasis cloud untuk manajemen keuangan, pembelian, penjualan, dan inventori. Tingkatkan efisiensi bisnis Anda dengan solusi ERP Indonesia terintegrasi." />
+        <meta name="keywords" content="ERP Indonesia, sistem ERP, ERP cloud, manajemen bisnis, ERP terintegrasi, software akuntansi, manajemen inventori" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Batasku Cloud - ERP Indonesia" />
+        <meta property="og:description" content="Sistem ERP berbasis cloud untuk manajemen bisnis modern di Indonesia" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://batasku.cloud" />
+        <meta property="og:image" content="https://batasku.cloud/og-image.jpg" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Batasku Cloud - ERP Indonesia" />
+        <meta name="twitter:description" content="Sistem ERP berbasis cloud untuk manajemen bisnis modern" />
+        <meta name="twitter:image" content="https://batasku.cloud/og-image.jpg" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://batasku.cloud" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Batasku Cloud ERP",
+          "description": "Sistem ERP berbasis cloud untuk manajemen bisnis modern di Indonesia",
+          "url": "https://batasku.cloud",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web Browser",
+          "offers": {
+            "@type": "Offer",
+            "price": "20000000",
+            "priceCurrency": "IDR"
+          },
+          "provider": {
+            "@type": "Organization",
+            "name": "Batasku Cloud",
+            "url": "https://batasku.cloud"
+          }
+        }
+        `}
+        </script>
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

@@ -11,6 +11,7 @@ function Header() {
     { name: 'Home', path: '/' },
     { name: 'Fitur', path: '/fitur' },
     { name: 'Harga', path: '/harga' },
+    { name: 'Blog', path: '/blog' },
     { name: 'Demo & Kontak', path: '/demo-kontak' }
   ];
 
@@ -22,9 +23,9 @@ function Header() {
         <div className="flex items-center">
           <Link to="/" className="flex items-center space-x-2">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary">
-              <span className="text-xl font-bold text-primary-foreground">SE</span>
+              <span className="text-xl font-bold text-primary-foreground">BC</span>
             </div>
-            <span className="text-xl font-bold text-foreground">Sistem ERP Terintegrasi</span>
+            <span className="text-xl font-bold text-foreground">Batasku Cloud</span>
           </Link>
         </div>
 

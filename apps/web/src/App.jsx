@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage.jsx';
 import FiturPage from './pages/FiturPage.jsx';
 import HargaPage from './pages/HargaPage.jsx';
 import DemoKontakPage from './pages/DemoKontakPage.jsx';
+import BlogPage from './pages/BlogPage.jsx';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/fitur" element={<FiturPage />} />
         <Route path="/harga" element={<HargaPage />} />
         <Route path="/demo-kontak" element={<DemoKontakPage />} />
+        <Route path="/blog" element={<BlogPage />} />
         <Route path="*" element={
           <div className="min-h-screen flex items-center justify-center">
             <div className="text-center">
