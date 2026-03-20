@@ -86,12 +86,12 @@ function BlogPage() {
     <>
       <Helmet>
         <title>Blog ERP Indonesia - Tips & Panduan Bisnis Modern</title>
-        <meta name="description" content="Blog ERP Indonesia dengan tips, panduan, dan studi kasu implementasi sistem ERP untuk bisnis modern. Pelajari tren teknologi dan best practices." />
-        <meta name="keywords" content="blog ERP Indonesia, panduan ERP, tips bisnis, implementasi ERP, studi kasu ERP" />
+        <meta name="description" content="Blog ERP Indonesia dengan tips, panduan, dan studi kasus implementasi sistem ERP untuk bisnis modern. Pelajari tren teknologi dan best practices." />
+        <meta name="keywords" content="blog ERP Indonesia, panduan ERP, tips bisnis, implementasi ERP, studi kasus ERP" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Blog ERP Indonesia - Tips & Panduan Bisnis Modern" />
-        <meta property="og:description" content="Blog ERP Indonesia dengan tips, panduan, dan studi kasu implementasi sistem ERP" />
+        <meta property="og:description" content="Blog ERP Indonesia dengan tips, panduan, dan studi kasus implementasi sistem ERP untuk bisnis modern" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://batasku.cloud/blog" />
         
@@ -114,7 +114,7 @@ function BlogPage() {
               >
                 <h1 className="mb-6">Blog ERP Indonesia</h1>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                  Tips, panduan, dan studi kasu implementasi sistem ERP untuk bisnis modern di Indonesia
+                  Tips, panduan, dan studi kasus implementasi sistem ERP untuk bisnis modern di Indonesia
                 </p>
               </motion.div>
             </div>
