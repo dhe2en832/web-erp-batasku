@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Lock, User, Calendar, CheckCircle2, Mail, Phone, MapPin } from 'lucide-react';
@@ -22,7 +22,26 @@ function DemoKontakPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // Track demo page view
+  useEffect(() => {
+    if (window.analytics) {
+      window.analytics.trackEvent('demo_page_view', {
+        page_title: 'Demo & Kontak',
+        page_location: window.location.href
+      });
+    }
+  }, []);
+
   const handleChange = (e) => {
+    // Track field interaction
+    if (window.analytics && e.target.name) {
+      window.analytics.trackEvent('demo_field_interaction', {
+        field_name: e.target.name,
+        field_type: e.target.type || 'text',
+        has_value: e.target.value.length > 0
+      });
+    }
+
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -33,8 +52,23 @@ function DemoKontakPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Track form submission attempt
+    if (window.analytics) {
+      window.analytics.trackEvent('demo_form_submit_attempt', {
+        form_name: 'Demo Request Form',
+        company_name: formData.perusahaan || 'Not provided'
+      });
+    }
+
     // Validate form
     if (!formData.nama || !formData.email || !formData.telepon || !formData.perusahaan) {
+      // Track validation error
+      if (window.analytics) {
+        window.analytics.trackEvent('demo_form_validation_error', {
+          missing_fields: getMissingFields(formData)
+        });
+      }
+
       toast({
         title: "Form tidak lengkap",
         description: "Mohon lengkapi semua field yang wajib diisi.",
@@ -53,6 +87,16 @@ function DemoKontakPage() {
     submissions.push(newSubmission);
     localStorage.setItem('demoRequests', JSON.stringify(submissions));
 
+    // Track successful form submission
+    if (window.analytics) {
+      window.analytics.trackEvent('demo_form_submit_success', {
+        form_name: 'Demo Request Form',
+        company_name: formData.perusahaan,
+        contact_method: 'Demo Request',
+        timestamp: new Date().toISOString()
+      });
+    }
+
     // Show success message
     toast({
       title: "Permintaan demo terkirim",
@@ -68,6 +112,18 @@ function DemoKontakPage() {
       pesan: ''
     });
     setIsSubmitting(false);
+  };
+
+  // Helper function to identify missing fields
+  const getMissingFields = (data) => {
+    const required = ['nama', 'email', 'telepon', 'perusahaan'];
+    return required.filter(field => !data[field]);
+  };
+
+  // Helper function to check if form is filled
+  const isFormFilled = (data) => {
+    const required = ['nama', 'email', 'telepon', 'perusahaan'];
+    return required.every(field => data[field] && data[field].trim().length > 0);
   };
 
   const timelineSteps = [
@@ -368,6 +424,14 @@ function DemoKontakPage() {
                           type="submit" 
                           className="w-full transition-all duration-200 active:scale-[0.98]"
                           disabled={isSubmitting}
+                          onClick={() => {
+                            if (window.analytics) {
+                              window.analytics.trackEvent('demo_submit_button_click', {
+                                button_text: 'Kirim Permintaan Demo',
+                                form_filled: isFormFilled(formData)
+                              });
+                            }
+                          }}
                         >
                           {isSubmitting ? 'Mengirim...' : 'Kirim Permintaan Demo'}
                         </Button>
