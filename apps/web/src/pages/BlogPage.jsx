@@ -11,14 +11,14 @@ import Footer from '@/components/Footer.jsx';
 function BlogPage() {
   const blogPosts = [
     {
-      id: '5-tren-erp-indonesia-2024',
-      title: '5 Tren ERP Indonesia yang Akan Mendominasi di 2024',
-      excerpt: 'Pelajari tren teknologi ERP terbaru yang akan mengubah landscape bisnis Indonesia. Cloud computing, AI integration, dan mobile-first approach.',
+      id: '5-tren-erp-indonesia-2026',
+      title: '5 Tren ERP Indonesia yang Mendominasi di 2026',
+      excerpt: 'Pelajari tren ERP terkini: modern frontend dengan foundation teruji, progressive enhancement, dan integration strategy yang realistis untuk bisnis Indonesia.',
       author: 'Tim Batasku',
-      date: '15 Maret 2024',
+      date: '15 Maret 2026',
       readTime: '5 menit',
       category: 'Tren Teknologi',
-      image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7'
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f'
     },
     {
       id: 'cara-memilih-erp-ukm',
@@ -28,7 +28,7 @@ function BlogPage() {
       date: '10 Maret 2024',
       readTime: '7 menit',
       category: 'Panduan',
-      image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7'
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71'
     },
     {
       id: 'studi-kas-efisiensi-erp',
@@ -38,7 +38,7 @@ function BlogPage() {
       date: '5 Maret 2024',
       readTime: '6 menit',
       category: 'Case Study',
-      image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7'
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d'
     },
     {
       id: 'erp-vs-akuntansi-software',
@@ -48,7 +48,7 @@ function BlogPage() {
       date: '28 Februari 2024',
       readTime: '8 menit',
       category: 'Komparasi',
-      image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7'
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f'
     },
     {
       id: 'roi-implementasi-erp',
@@ -58,7 +58,7 @@ function BlogPage() {
       date: '20 Februari 2024',
       readTime: '6 menit',
       category: 'Financial',
-      image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7'
+      image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44'
     },
     {
       id: 'cloud-erp-benefits',
@@ -68,7 +68,7 @@ function BlogPage() {
       date: '15 Februari 2024',
       readTime: '5 menit',
       category: 'Cloud Technology',
-      image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7'
+      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa'
     }
   ];
 
