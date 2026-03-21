@@ -134,10 +134,21 @@ function HomePage() {
                     Tingkatkan efisiensi operasional perusahaan Anda dengan sistem ERP yang mengintegrasikan seluruh proses bisnis dalam satu platform. Dari keuangan, pembelian, penjualan, hingga inventori - semua terhubung secara real-time.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Button asChild size="lg" className="transition-all duration-200 active:scale-[0.98]">
+                    <Button 
+                      asChild 
+                      size="lg" 
+                      className="transition-all duration-200 active:scale-[0.98]"
+                      onClick={() => window.analytics?.trackCTAClick('Lihat Fitur', 'hero')}
+                    >
                       <Link to="/fitur">Lihat Fitur</Link>
                     </Button>
-                    <Button asChild variant="secondary" size="lg" className="transition-all duration-200 active:scale-[0.98]">
+                    <Button 
+                      asChild 
+                      variant="secondary" 
+                      size="lg" 
+                      className="transition-all duration-200 active:scale-[0.98]"
+                      onClick={() => window.analytics?.trackCTAClick('Cek Paket Harga', 'hero')}
+                    >
                       <Link to="/harga">Cek Paket Harga</Link>
                     </Button>
                   </div>
@@ -224,7 +235,13 @@ function HomePage() {
                 <p className="text-lg mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
                   Jadwalkan demo gratis dan lihat bagaimana sistem kami dapat membantu bisnis Anda berkembang.
                 </p>
-                <Button asChild size="lg" variant="secondary" className="transition-all duration-200 active:scale-[0.98]">
+                <Button 
+                  asChild 
+                  size="lg" 
+                  variant="secondary" 
+                  className="transition-all duration-200 active:scale-[0.98]"
+                  onClick={() => window.analytics?.trackCTAClick('Request Demo Sekarang', 'footer')}
+                >
                   <Link to="/demo-kontak">Request Demo Sekarang</Link>
                 </Button>
               </motion.div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
@@ -738,6 +738,13 @@ const blogPosts = {
 function BlogDetailPage() {
   const { slug } = useParams();
   const post = blogPosts[slug];
+
+  // Track blog read event
+  useEffect(() => {
+    if (window.analytics && post) {
+      window.analytics.trackBlogRead(post.title);
+    }
+  }, [post]);
 
   if (!post) {
     return (

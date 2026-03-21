@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { Toaster } from '@/components/ui/toaster';
 import ScrollToTop from './components/ScrollToTop.jsx';
+import Analytics from './components/Analytics.jsx';
 import HomePage from './pages/HomePage.jsx';
 import FiturPage from './pages/FiturPage.jsx';
 import HargaPage from './pages/HargaPage.jsx';
@@ -12,6 +13,7 @@ import BlogDetailPage from './pages/BlogDetailPage.jsx';
 function App() {
   return (
     <Router>
+      <Analytics />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
