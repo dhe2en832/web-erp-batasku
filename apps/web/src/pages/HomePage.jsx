@@ -23,8 +23,8 @@ function HomePage() {
     },
     {
       icon: Users,
-      title: 'Dipercaya Ribuan Perusahaan',
-      description: 'Telah digunakan oleh berbagai industri di seluruh Indonesia dengan tingkat kepuasan tinggi.'
+      title: 'Foundation ERP Teruji',
+      description: 'Dibangun di atas ERPNext yang telah dipercaya ribuan perusahaan globally, dengan frontend modern yang disesuaikan untuk pasar Indonesia.'
     }
   ];
 
