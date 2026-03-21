@@ -7,7 +7,7 @@ const Analytics = () => {
   useEffect(() => {
     // Track page views
     if (typeof gtag !== 'undefined') {
-      gtag('config', 'GA_MEASUREMENT_ID', {
+      gtag('config', 'G-3J0X3CXCCJ', {
         page_path: location.pathname,
       });
     }

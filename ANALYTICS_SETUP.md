@@ -17,14 +17,14 @@
 
 ## Langkah 3: Update Website Code
 1. Buka file: `apps/web/index.html`
-2. Cari: `GA_MEASUREMENT_ID`
-3. Replace dengan ID Anda:
+2. Cari: `G-FKZZQSJE5P`
+3. Replace dengan ID baru:
    ```html
    <!-- Sebelum -->
-   gtag('config', 'GA_MEASUREMENT_ID');
+   gtag('config', 'G-FKZZQSJE5P');
    
-   <!-- Sesudah (contoh) -->
-   gtag('config', 'G-ABC123DEF4');
+   <!-- Sesudah (updated) -->
+   gtag('config', 'G-3J0X3CXCCJ');
    ```
 
 ## Langkah 4: Verifikasi Tracking
